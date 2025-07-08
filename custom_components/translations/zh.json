@@ -1,0 +1,99 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Tasmota 红外设备设置",
+        "description": "配置您的 Tasmota 红外设备\n\n支持的设备类型:\n{device_types}",
+        "data": {
+          "host": "设备IP地址",
+          "name": "设备名称", 
+          "device_type": "设备类型"
+        }
+      },
+      "climate": {
+        "title": "空调设备配置",
+        "description": "配置空调设备参数\n\n{example_config}",
+        "data": {
+          "vendor": "空调品牌",
+          "import_config": "导入配置 (可选)"
+        }
+      },
+      "fan": {
+        "title": "风扇设备配置",
+        "description": "配置风扇红外按键\n\n{example_config}",
+        "data": {
+          "import_config": "导入配置 (可选)"
+        }
+      },
+      "remote": {
+        "title": "遥控器设备配置",
+        "description": "配置遥控器按键\n\n{example_config}",
+        "data": {
+          "import_config": "导入配置 (必需)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "无法连接到设备，请检查IP地址和网络连接",
+      "invalid_host": "无效的设备或不是Tasmota设备",
+      "unknown": "发生未知错误",
+      "no_buttons": "未找到按键配置，请导入包含按键数据的配置"
+    },
+    "abort": {
+      "already_configured": "该设备已经配置过了"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "设备配置选项",
+        "description": "设备类型: {device_type}\n当前IP地址: {current_ip}{extra_info}",
+        "data": {
+          "device_ip": "设备IP地址",
+          "update_device_config": "更新设备配置"
+        }
+      },
+      "climate_options": {
+        "title": "更新空调配置",
+        "description": "{current_config}",
+        "data": {
+          "vendor": "空调品牌",
+          "update_config": "导入新配置 (可选)"
+        }
+      },
+      "fan_options": {
+        "title": "更新风扇配置",
+        "description": "{current_config}",
+        "data": {
+          "update_config": "导入新配置 (可选)"
+        }
+      },
+      "remote_options": {
+        "title": "更新遥控器配置",
+        "description": "{current_config}",
+        "data": {
+          "update_config": "导入新配置 (可选)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "climate": {
+      "state": {
+        "off": "关闭",
+        "heat": "制热",
+        "cool": "制冷",
+        "heat_cool": "自动",
+        "auto": "自动",
+        "dry": "除湿",
+        "fan_only": "送风"
+      }
+    },
+    "fan": {
+      "state": {
+        "off": "关闭",
+        "on": "开启"
+      }
+    }
+  }
+}

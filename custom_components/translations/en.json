@@ -1,0 +1,99 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Tasmota IR Device Setup",
+        "description": "Configure your Tasmota IR device\n\nSupported device types:\n{device_types}",
+        "data": {
+          "host": "Device IP Address",
+          "name": "Device Name",
+          "device_type": "Device Type"
+        }
+      },
+      "climate": {
+        "title": "Air Conditioner Configuration",
+        "description": "Configure air conditioner parameters\n\n{example_config}",
+        "data": {
+          "vendor": "AC Brand",
+          "import_config": "Import Configuration (Optional)"
+        }
+      },
+      "fan": {
+        "title": "Fan Configuration",
+        "description": "Configure fan IR buttons\n\n{example_config}",
+        "data": {
+          "import_config": "Import Configuration (Optional)"
+        }
+      },
+      "remote": {
+        "title": "Remote Control Configuration",
+        "description": "Configure remote control buttons\n\n{example_config}",
+        "data": {
+          "import_config": "Import Configuration (Required)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to device, please check IP address and network connection",
+      "invalid_host": "Invalid device or not a Tasmota device",
+      "unknown": "Unexpected error occurred",
+      "no_buttons": "No button configuration found, please import configuration with button data"
+    },
+    "abort": {
+      "already_configured": "Device is already configured"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Device Configuration Options",
+        "description": "Device Type: {device_type}\nCurrent IP: {current_ip}{extra_info}",
+        "data": {
+          "device_ip": "Device IP Address",
+          "update_device_config": "Update Device Configuration"
+        }
+      },
+      "climate_options": {
+        "title": "Update Air Conditioner Configuration",
+        "description": "{current_config}",
+        "data": {
+          "vendor": "AC Brand",
+          "update_config": "Import New Configuration (Optional)"
+        }
+      },
+      "fan_options": {
+        "title": "Update Fan Configuration",
+        "description": "{current_config}",
+        "data": {
+          "update_config": "Import New Configuration (Optional)"
+        }
+      },
+      "remote_options": {
+        "title": "Update Remote Control Configuration",
+        "description": "{current_config}",
+        "data": {
+          "update_config": "Import New Configuration (Optional)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "climate": {
+      "state": {
+        "off": "Off",
+        "heat": "Heat",
+        "cool": "Cool",
+        "heat_cool": "Auto",
+        "auto": "Auto",
+        "dry": "Dry",
+        "fan_only": "Fan"
+      }
+    },
+    "fan": {
+      "state": {
+        "off": "Off",
+        "on": "On"
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "domain": "tasmota_ir",
+  "name": "Tasmota红外控制",
+  "documentation": "https://github.com/your-repo/tasmota-ir-integration",
+  "dependencies": [],
+  "codeowners": ["@your-username"],
+  "requirements": ["requests>=2.25.1"],
+  "version": "1.0.0",
+  "config_flow": true,
+  "iot_class": "local_polling"
+}
