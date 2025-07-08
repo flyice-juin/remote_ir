@@ -1,10 +1,10 @@
 {
   "domain": "tasmota_ir",
   "name": "Tasmota红外控制",
-  "documentation": "https://github.com/your-repo/tasmota-ir-integration",
+  "documentation": "https://github.com/flyice-juin/tasmota_ir",
   "dependencies": [],
-  "codeowners": ["@your-username"],
-  "requirements": ["requests>=2.25.1"],
+  "codeowners": ["@flyice-juin"],
+  "requirements": ["requests"],
   "version": "1.0.0",
   "config_flow": true,
   "iot_class": "local_polling"
