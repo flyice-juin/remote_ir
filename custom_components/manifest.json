@@ -1,7 +1,7 @@
 {
-  "domain": "tasmota_ir",
-  "name": "Tasmota红外控制",
-  "documentation": "https://github.com/flyice-juin/tasmota_ir",
+  "domain": "remote_ir",
+  "name": "红外控制",
+  "documentation": "https://github.com/flyice-juin/remote_ir",
   "dependencies": [],
   "codeowners": ["@flyice-juin"],
   "requirements": ["requests"],
